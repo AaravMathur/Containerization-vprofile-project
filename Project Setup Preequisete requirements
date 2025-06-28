@@ -1,0 +1,30 @@
+Project Setup Preequisete requirements
+1. MySql (Database SVC) 		=> 8.0.33
+2. Memcach2 (DB Caching SVC)	=> 1.6
+3. RabbitMQ (Brocken/Queue SVC) => 4.0
+4. JDK 							=> JDK 21
+MAVEN							=> Maven 3.9.9
+Tomcat(Application SVC)			=> 10, jdk21
+Nginx (Web SVC)					=>1.27
+
+
+All the images with tags
+1. mysql:8.0.33
+2.memcache:latest
+3.rabitmq:latest
+4.maven:3.9.9-eclipse-temurin-21-jammy
+5.tomcat:10-jdk21
+nginx:latest
+
+Dcoker Compose Info
+Now we have 5 containers
+1.app => Dockerfile
+2.db  => Dcokerfile
+Container Name: vprodb 
+Ports:3306:3306
+password: MYSQL_ROOT_PASSWORD
+Volume: /var/lib/mysql
+3.web => Dockerfile
+4.mc  => Dockerhub Image
+5.rmq => Dockerhub Image
+	 					
